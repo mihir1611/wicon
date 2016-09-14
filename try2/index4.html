@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index4/css1.css" > 
+	<link rel="stylesheet" href="index4/css2.css" >
+	<script src="index4/js1.js"></script>
+	<script src="index4/js2.js" ></script>
+<style type="text/css">
+	.list-group{
+		width: 100%;
+	}
+    .bs-example{
+    	margin: 25px;
+    }
+	.btn{
+	background-color: #4CAF50;
+	margin-right: 50%;
+	}
+	.list-group-item
+{
+  overflow:hidden;  
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+</style>
+ </head>
+<body>
+
+<!--- Header --->
+
+<div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="#">Restaurant</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="/">Starters</a>
+                </li>
+                <li><a href="/products">Pujabi</a>
+                </li>
+                <li><a href="/about-us">South Indian</a>
+                </li>
+                <li><a href="/contact">Chinese</a>
+                </li>
+				<li><a href="/contact">Snakes</a>
+                </li>
+				<li><a href="/contact">Desert and Beverages</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--- Header ends--->
+
+<!--- Menu Starts --->
+<div class="bs-example">
+    <div class="list-group">
+        <a href="#" class="list-group-item active">
+            Item 1 <span class="badge">₹ 120</span>
+        </a>
+        <a href="#" class="list-group-item">
+			<span class="pull-left"> <b> Item 2 xxxxxxxxxxxxxxxxxxxxx</b> <br> Description of dish <br> Description of dish <br>Description of dish
+			</span>
+			<span class="pull-center"> <img src="images/pic1.jpg"> </span>
+			<span class="badge">
+			<form>
+				<div class="form-group">
+				  <label for="sel1"><h5>₹ 120 </h5></label>
+				  <select class="form-control" id="sel1">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				  </select>
+				 </div>
+			  </form>
+			</span>
+        </a>
+        <a href="#" class="list-group-item">
+             Item 3 <span class="badge">₹ 50</span>
+			  <form>
+				<div class="form-group">
+				  <label for="sel1">Quantity</label>
+				  <select class="form-control" id="sel1">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				  </select>
+				 </div>
+			  </form>
+        </a>
+        <a href="#" class="list-group-item">
+             Item 4 <span class="badge">80</span>
+			 <span class="pull-right">
+			  <button class="btn btn-xs btn-info">CCS</button>
+			  </span>
+        </a>
+		<a href="#" class="list-group-item">
+             Item 5 <span class="badge">₹ 100</span>
+			 <span class="pull-right">
+			  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown Example</button>
+			  <ul class="dropdown-menu">
+				<li><a href="#">HTML</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="#">JavaScript</a></li>
+			  </ul>
+			</span>
+        </a>
+		<a href="#" class="list-group-item">
+             Item 6 <span class="badge">₹ 120</span>
+			 
+		</a>
+		<a href="#" class="list-group-item">
+             Item 7 <span class="badge">₹ 150</span>
+			 
+		</a>
+		<a href="#" class="list-group-item">
+             Item 8 <span class="badge">₹ 20</span>
+			 
+		</a>
+    </div>
+</div>
+
+<div class="list-group">
+  <a href="#" class="list-group-item clearfix">
+    <span class="glyphicon glyphicon-file"></span>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    <span class="pull-right">
+      <button class="btn btn-xs btn-info">CCS</button>
+      <button class="btn btn-xs btn-warning">
+        <span class="glyphicon glyphicon-trash"></span>
+      </button>
+    </span>
+  </a>
+</div>
+
+
+
+</body>
+</html>
+

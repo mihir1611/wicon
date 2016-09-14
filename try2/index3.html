@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<!--- Footer --->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui">
+	<meta name="description" content="Some simple ideas for enhancing the checkout process" />
+	<meta name="keywords" content="checkout, button, concept, animated, web design, inspiration" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/checkout-rounded.css" />
+<!------>
+
+  <style>
+<!-- CSS code --->
+	</style>
+ </head>
+<body>
+
+<div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="#">Restaurant</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="/">Starters</a>
+                </li>
+                <li><a href="/products">Pujabi</a>
+                </li>
+                <li><a href="/about-us">South Indian</a>
+                </li>
+                <li><a href="/contact">Chinese</a>
+                </li>
+				<li><a href="/contact">Snakes</a>
+                </li>
+				<li><a href="/contact">Desert and Beverages</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--- Checkout Footer--->
+<div class="container">
+			<div class="dummy-fixed">
+				<div class="checkout">
+					<a class="checkout__button" href="#"><!-- Fallback location -->
+						<span class="checkout__text">
+							<span class="checkout__text-inner checkout__initial-text"><h5>Checkout</h5></span>
+							<span class="checkout__text-inner checkout__final-text">$40.70 <i class="fa fa-fw fa-shopping-cart"></i></span>
+						</span>
+					</a>
+					<div class="checkout__order">
+						<div class="checkout__order-inner">
+							<table class="checkout__summary">
+								<thead>
+							        <tr><th>Item</th><th>QTY</th><th>Price</th><th>&nbsp;</th></tr>
+							    </thead>
+							    <tbody>
+									<tr><td>Cheese Burger <span>Today's Special</span></td><td>1</td><td>₹50</td><td><button class="checkout__action"><i class="icon fa fa-trash"></i></button></td></tr>
+									<tr><td>French Fries </td><td>1</td><td>₹70</td><td><button class="checkout__action"><i class="icon fa fa-trash"></i></button></td></tr>
+									<tr><td>Coke </td><td>2</td><td>₹40</td><td><button class="checkout__action"><i class="icon fa fa-trash"></i></button></td></tr>
+								</tbody>
+							</table><!-- /checkout__summary -->
+							<button class="checkout__close checkout__cancel"><i class="icon fa fa-fw fa-close"></i>Close</button>
+						</div><!-- /checkout__order-inner -->
+					</div><!-- /checkout__order -->
+				</div><!-- /checkout -->
+				<div class="checkout__count">3</div>
+			</div>
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script>
+			(function() {
+				var dummy = document.getElementById('dummy-grid');
+				[].slice.call( document.querySelectorAll( '.checkout' ) ).forEach( function( el ) {
+					var openCtrl = el.querySelector( '.checkout__button' ),
+						closeCtrl = el.querySelector( '.checkout__cancel' );
+
+					openCtrl.addEventListener( 'click', function(ev) {
+						ev.preventDefault();
+						classie.add( el, 'checkout--active' );
+						classie.add( dummy, 'dummy-grid--highlight' );
+					} );
+
+					closeCtrl.addEventListener( 'click', function() {
+						classie.remove( el, 'checkout--active' );
+						classie.remove( dummy, 'dummy-grid--highlight' );
+					} );
+				} );
+			})();
+		</script>
+		
+</body>
+</html>
+
